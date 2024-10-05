@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, send_file
 from rembg import remove
 from PIL import Image
 from io import BytesIO
-
+import requests
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
